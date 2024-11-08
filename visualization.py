@@ -201,5 +201,5 @@ if __name__ == "__main__":
     # visualization("0_drugs_update_hm_response.xlsx")
     # visualization_10("0_drugs_update_hm_response.xlsx")
     # visualization_10("0_violence_update_hm_response.xlsx")
-    visualization_10("0_illegal_activity_update_hm_response.xlsx")
-    visualization_10("0_religion_update_hm_response.xlsx")
+    # visualization_10("0_illegal_activity_update_hm_response.xlsx")
+    # visualization_10("0_religion_update_hm_response.xlsx")

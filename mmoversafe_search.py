@@ -144,7 +144,6 @@ def get_prompts(row):
     return pmpts
 
 def mmoversafe_generate_queries(xlsx_file):
-
     topic = get_topic(xlsx_file)
     if not topic:
         print("No topic found")
@@ -192,6 +191,7 @@ def mmoversafe_generate_queries(xlsx_file):
     df.to_excel(save_xlsx_file, index=False)
 
 def mmoversfe_response_generate(xlsx_file):
+    import ipdb; ipdb.set_trace()
     num = 5
     topic = get_topic(xlsx_file)
     if not topic:
@@ -264,7 +264,3 @@ if __name__ == '__main__':
         mmoversafe_generate_queries(args.xlsx_file)
     elif args.task == 'response_gen':
         mmoversfe_response_generate(args.xlsx_file)
-
-
-
-
