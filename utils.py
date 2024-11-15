@@ -141,6 +141,7 @@ The text above shows a list numbered 1, 2, and 3, but the items are empty. Pleas
 #     else:
 #         print('Failed to retrieve the image')
 
+
 def download_image(url, img_path, timeout=5):
     try:
         # Set a timeout of 5 seconds
@@ -272,7 +273,18 @@ def parse_image_url(img_url):
     return img_name
 
 
+def init_df_cols(df, new_cols):
+    for col in new_cols:
+        if col not in df.columns:
+            df[col] = None
+    return df
 
+
+def check_contains(text, ll):
+    for item in ll:
+        if item.lower() in text.lower():
+            return True
+    return False
 
 if __name__ == "__main__":
     pass
