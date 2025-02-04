@@ -20,6 +20,11 @@ def load_image(image_file):
         image = Image.open(image_file).convert("RGB")
     return image
 
+def get_topic(filename):
+    for topic in ['violence', 'drugs', 'porngraphy', 'religion', 'illegal_activity', 'discrimination']:
+        if topic in filename:
+            return topic
+    return None
 
 def get_draw_area(draw_kwargs):
     im = Image.new("RGB", (0, 0))
